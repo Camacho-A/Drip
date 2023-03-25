@@ -20,8 +20,9 @@ const CartExample = () => (
       <a href="https://use-shopping-cart.netlify.app/">use-shopping-cart</a>
     </h2>
     <CartProvider
-      mode="client-only"
-      stripe={stripePromise}
+      mode="payment"
+      cartMode="client-only"
+      stripe={process.env.GATSBY_STRIPE_PUBLISHABLE_KEY}
       successUrl={`${window.location.origin}/page-2/`}
       cancelUrl={`${window.location.origin}/`}
       currency="USD"
