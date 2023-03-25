@@ -3,11 +3,15 @@ import { graphql, StaticQuery } from "gatsby"
 import SkuCard from "./SkuCard"
 
 const conatinerStyles = {
-  display: "flex",
-  flexDirection: "row",
-  flexWrap: "wrap",
-  justifyContent: "space-between",
-  padding: "1rem 0 1rem 0",
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    padding: "1rem 0 1rem 0",
+    fontFamily: "Permanent Marker",
+    fontSize: "24px",
+    textAlign: "center",
+  
 }
 
 export default props => (

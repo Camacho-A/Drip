@@ -9,16 +9,14 @@ import CartOverview from "../components/CartOverview"
 import { loadStripe } from "@stripe/stripe-js"
 import { CartProvider } from "use-shopping-cart"
 
+
 const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
 
 const CartExample = () => (
   <Layout>
-    <SEO title="Cart Example" />
-    <h1>Checkout with cart example</h1>
-    <h2>
-      With{" "}
-      <a href="https://use-shopping-cart.netlify.app/">use-shopping-cart</a>
-    </h2>
+    <SEO title="Drip" />
+    <h2>Sneakers</h2>
+  
     <CartProvider
       mode="payment"
       cartMode="client-only"

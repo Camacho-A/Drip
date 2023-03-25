@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+
+
 :root {
   --border-radius: 4px;
   --color-text: #333;
@@ -32,6 +40,8 @@ html {
   font-size: var(--font-md);
   line-height: var(--line-height-normal);
   overflow-y: scroll;
+  /* background-color: #FDFFFC; */
+
 }
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -40,7 +50,7 @@ body {
   font-family: sans-serif;
   font-family: var(--font-sans);
   font-weight: normal;
-  margin: 0;
+  /* margin: 0; */
   word-wrap: break-word;
 }
 a {
@@ -71,15 +81,17 @@ dfn {
   font-style: italic;
 }
 h1 {
-  margin: 0;
+  font-family: 'Nosifer', cursive;
+  color: #C1292E;
+  font-size: 180px;
+  text-align: center;
+  margin: auto;
   margin-bottom: 3rem;
-  padding: 0;
+  padding: 10px;
   line-height: var(--line-height-dense);
   letter-spacing: -0.01em;
 }
-h1 > b {
-  color: var(--color-primary);
-}
+
 img {
   border-style: none;
   max-width: 100%;
