@@ -7,6 +7,13 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+// process.env.GATSBY_STRIPE_SECRET_KEY
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -16,6 +23,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ['Price'],
+        secretKey: process.env.GATSBY_STRIPE_SECRET_KEY,
+        downloadFiles: false,
+      
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

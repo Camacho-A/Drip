@@ -5,14 +5,17 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@stripe/stripe-js": "^1.50.0",
     "gatsby": "^5.7.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-source-filesystem": "^5.7.0",
+    "gatsby-source-stripe": "^4.0.0",
     "gatsby-transformer-sharp": "^5.7.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "use-shopping-cart": "^3.1.6"
   },
   "devDependencies": {
     "prettier": "^2.8.4"
