@@ -82,15 +82,30 @@ dfn {
 }
 h1 {
   font-family: 'Nosifer', cursive;
-  color: #C1292E;
-  font-size: 180px;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: url('../images/background4.jpg');
+  /* background-position: left; */
+  background-size: 100%;
+  font-size: 300px;
   text-align: center;
   margin: auto;
   margin-bottom: 3rem;
   padding: 10px;
   line-height: var(--line-height-dense);
-  letter-spacing: -0.01em;
+  letter-spacing: 50px;
+  animation: bg-animation 60s cubic-bezier(0.3,0,0.7,1) infinite;
 }
+
+@keyframes bg-animation {
+  0% {background-position: 0% 0%;}
+  50% {background-position: 100% 100%;}
+  100% {background-position: 0% 0%;}
+}
+
+
 
 img {
   border-style: none;

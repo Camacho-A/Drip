@@ -3,15 +3,17 @@ import React, { useState } from "react"
 import { useShoppingCart } from "use-shopping-cart"
 
 const buttonStyles = {
-  fontSize: "13px",
+    fontSize: "23px",
+    color: "white",
   textAlign: "center",
-  color: "#fff",
   outline: "none",
-  padding: "12px",
+  padding: "15px",
   boxShadow: "2px 5px 10px rgba(0,0,0,.1)",
-  backgroundColor: "rgb(255, 178, 56)",
+  backgroundColor: "#235789",
   borderRadius: "6px",
   letterSpacing: "1.5px",
+  fontFamily: "Fredericka the Great",
+  margin: "auto 12px",
 }
 
 const Cart = () => {
@@ -23,7 +25,7 @@ const Cart = () => {
   return (
     <div>
       {/* This is where we'll render our cart */}
-      <p>Number of Items: {cartCount}</p>
+      <p>Number of Items in Cart: {cartCount}</p>
       <p>Total: {formattedTotalPrice}</p>
 
       {/* Redirects the user to Stripe */}
