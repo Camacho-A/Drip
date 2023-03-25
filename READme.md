@@ -28,14 +28,14 @@ A sneaker retail consignment store for rare shoes. Carrying the rarest exclusive
 - Outlet -- "/shoe/delete/:id" --> deleteAction
 
 #### Database Schema
-![Schema](src/img/Model%20Schema.png)
+![Schema](src/images/Model%20Schema.png)
 
 #### Website Images
-![IndexPage](src/img/home%20page.jpg)
-![ShowPage](src/img/show.jpg)
-![Checkout](src/img/checkout.jpg)
-![User Auth - Login](src/img/user%20auth%20-%20login.jpg)
-![User Auth - Create](src/img/user%20auth%20-%20create.jpg)
+![IndexPage](src/images/home%20page.jpg)
+![ShowPage](src/images/show.jpg)
+![Checkout](src/images/checkout.jpg)
+![User Auth - Login](src/images/user%20auth%20-%20login.jpg)
+![User Auth - Create](src/images/user%20auth%20-%20create.jpg)
 
 
 ### Link to Planning Trello Board
