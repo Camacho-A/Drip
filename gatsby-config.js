@@ -18,7 +18,7 @@ module.exports = {
   siteMetadata: {
     title: `Sneaker Store`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@angelicacamacho`,
+    author: `Angelica Camacho`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -39,7 +39,9 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-transformer-sharp`,
+    
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

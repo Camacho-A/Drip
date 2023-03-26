@@ -24,7 +24,9 @@ const buttonStyles = {
   borderRadius: "6px",
   letterSpacing: "1.5px",
   fontFamily: "Fredericka the Great",
-  margin:"auto",
+  margin: "auto",
+  cursor: "pointer",
+  fontWeight: "bold",
 }
 
 const SkuCard = ({ sku }) => {
@@ -32,8 +34,8 @@ const SkuCard = ({ sku }) => {
 
   return (
     <div style={cardStyles}>
-          <h4>{ sku.name }</h4>
-          <img src={sku.images} />
+      <h4>{sku.name}</h4>
+          <img className="img" src={ sku.images } />
       <p>
         Price:{" "}
         {formatCurrencyString({
@@ -41,6 +43,8 @@ const SkuCard = ({ sku }) => {
           currency: sku.currency,
         })}
       </p>
+
+  
       <button style={buttonStyles} onClick={() => addItem(sku)}>
         ADD TO CART
       </button>

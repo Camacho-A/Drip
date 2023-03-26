@@ -15,7 +15,7 @@ const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
 const CartExample = () => (
   <Layout>
     <SEO title="Drip" />
-    <h2>Sneakers</h2>
+    <h2>Available Sneakers</h2>
   
     <CartProvider
       mode="payment"
