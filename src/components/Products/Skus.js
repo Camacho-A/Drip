@@ -38,6 +38,7 @@ export default props => (
         }
       }
     `}
+    
     render={({ prices }) => (
       <div style={conatinerStyles}>
         {prices.edges.map(({ node: price }) => {

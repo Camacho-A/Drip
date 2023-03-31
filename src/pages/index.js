@@ -12,6 +12,8 @@ import { CartProvider } from "use-shopping-cart"
 
 const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
 
+const url = typeof window === 'undefined' ? null : window.location.origin
+
 const CartExample = () => (
   <Layout>
     <SEO title="Drip" />
@@ -21,8 +23,8 @@ const CartExample = () => (
       mode="payment"
       cartMode="client-only"
       stripe={process.env.GATSBY_STRIPE_PUBLISHABLE_KEY}
-      successUrl={`${window.location.origin}/page-2/`}
-      cancelUrl={`${window.location.origin}/`}
+      successUrl={`${url}/page-2/`}
+      cancelUrl={`${url}/`}
       currency="USD"
       allowedCountries={["US", "GB", "CA"]}
       billingAddressCollection={true}

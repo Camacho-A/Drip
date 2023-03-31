@@ -38,7 +38,8 @@ html {
   font-size: var(--font-md);
   line-height: var(--line-height-normal);
   overflow-y: scroll;
-  /* background-color: #FDFFFC; */
+  /* background-color: black; */
+  
 
 }
 body {
@@ -50,6 +51,10 @@ body {
   font-weight: normal;
   /* margin: 0; */
   word-wrap: break-word;
+  /* background-image: url('../images/can.jpg');
+  background-size: 100px 150px;
+
+  background-repeat: no-repeat; */
 }
 a {
   background-color: transparent;

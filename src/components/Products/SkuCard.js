@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import { useShoppingCart, formatCurrencyString } from "use-shopping-cart"
 
@@ -24,9 +25,9 @@ const buttonStyles = {
   borderRadius: "6px",
   letterSpacing: "1.5px",
   fontFamily: "Fredericka the Great",
-  margin: "auto",
-  cursor: "pointer",
-  fontWeight: "bold",
+    margin: "auto",
+    cursor: "pointer",
+  
 }
 
 const SkuCard = ({ sku }) => {
@@ -35,7 +36,10 @@ const SkuCard = ({ sku }) => {
   return (
     <div style={cardStyles}>
       <h4>{sku.name}</h4>
-          <img className="img" src={ sku.images } />
+      <Link to={`${window.location.origin}/using-dsg`}>
+        <img className="img" src={sku.images} alt={sku.name} />
+      </Link>
+
       <p>
         Price:{" "}
         {formatCurrencyString({
@@ -44,7 +48,6 @@ const SkuCard = ({ sku }) => {
         })}
       </p>
 
-  
       <button style={buttonStyles} onClick={() => addItem(sku)}>
         ADD TO CART
       </button>
