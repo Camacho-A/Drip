@@ -30,13 +30,15 @@ const buttonStyles = {
   
 }
 
+const url = typeof window === "undefined" ? null : window.location.origin
+
 const SkuCard = ({ sku }) => {
   const { addItem } = useShoppingCart()
 
   return (
     <div style={cardStyles}>
       <h4>{sku.name}</h4>
-      <Link to={`${window.location.origin}/using-dsg`}>
+      <Link to={`${url}/about/`}>
         <img className="img" src={sku.images} alt={sku.name} />
       </Link>
 
